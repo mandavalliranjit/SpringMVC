@@ -1,0 +1,5 @@
+package com.spring.customvalidation.validation;
+
+public @interface CourseCode {
+
+}

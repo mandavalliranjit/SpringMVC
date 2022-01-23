@@ -1,0 +1,23 @@
+package com.spring.formvalidation;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CustomerController {
+
+	@RequestMapping("/")
+	public String homePage() {
+		return "home-page";
+	}
+	
+	@RequestMapping("/customerDetails")
+	public String showCustomerDetailsPage() {
+		return "customer-details";
+	}
+	
+	@RequestMapping("/processForm")
+	public String processCustomerDetails() {
+		
+	}
+}

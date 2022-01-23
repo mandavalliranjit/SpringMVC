@@ -1,0 +1,28 @@
+package com.spring.formvalidation;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CustomerController {
+
+	@RequestMapping("/")
+	public String homePage() {
+		return "home-page";
+	}
+	
+	@RequestMapping("/customerDetails")
+	public String showCustomerDetailsPage() {
+		return "customer-details";
+	}
+	
+	@RequestMapping("/processForm")
+	public String processCustomerDetails(@ModelAttribute Customer newCustomer, Model model) {
+		model.addAttribute("customerFromPage", newCustomer);
+		System.out.println("FirstName: "+newCustomer.getFirstName());
+		System.out.println("LastName: "+newCustomer.getLastName());
+		return "customer-confirmation";
+	}
+}

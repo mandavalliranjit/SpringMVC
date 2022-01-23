@@ -1,0 +1,6 @@
+package com.springdemo.formtags;
+
+@Controller
+public class HomeController {
+
+}

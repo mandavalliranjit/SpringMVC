@@ -1,0 +1,8 @@
+package com.spring.customvalidation.validation;
+
+import javax.validation.Constraint;
+
+@Constraint(validatedBy=CourseCodeConstraintValidator.class)
+public @interface CourseCode {
+
+}

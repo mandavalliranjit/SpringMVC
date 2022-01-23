@@ -1,0 +1,24 @@
+package com.spring.customvalidation.validation;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
+public class CourseCodeConstraintValidator implements ConstraintValidator<CourseCode, String>{
+	private String coursePrefix;
+
+	@Override
+	public void initialize(CourseCode courseCode) {
+		//.value() below is the value that the user enters on the screen
+		this.coursePrefix = courseCode.value();
+	}
+
+	@Override
+	public boolean isValid(String courseCodeValue, ConstraintValidatorContext constraintValidatorContext) {
+		boolean result = courseCodeValue.startsWith(coursePrefix);
+		
+		
+		return false;
+	}
+	
+
+}

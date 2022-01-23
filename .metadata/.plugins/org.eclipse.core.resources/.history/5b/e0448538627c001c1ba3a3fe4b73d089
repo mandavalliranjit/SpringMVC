@@ -1,0 +1,5 @@
+package com.spring.formvalidation;
+
+public class Customer {
+
+}

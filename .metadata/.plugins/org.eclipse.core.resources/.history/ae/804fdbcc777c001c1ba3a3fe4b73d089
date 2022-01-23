@@ -1,0 +1,33 @@
+package com.spring.formvalidation;
+
+import javax.validation.constraints.NotNull;
+
+public class Customer {
+	String firstName;
+	
+	
+	@NotNull(message="Last Name is required")
+	String lastName;
+	
+	public Customer() {
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	
+
+}

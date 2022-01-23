@@ -1,0 +1,7 @@
+package com.spring.customvalidation.validation;
+
+import javax.validation.ConstraintValidatorContext;
+
+public class CourseCodeConstraintValidator implements ConstraintValidatorContext{
+
+}

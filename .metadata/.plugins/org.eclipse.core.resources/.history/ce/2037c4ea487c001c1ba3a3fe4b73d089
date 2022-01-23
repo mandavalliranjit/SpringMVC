@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+
+<form:form action="processForm" modelAttribute="studentFromPage">
+	<br></br>
+First Name: <form:input path="firstName" />
+	<br></br>
+Last Name: <form:input path="lastName" />
+	<br></br>
+Country:
+	<form:select path="country">
+		<form:option label="India" value="India" />
+		<form:option label="America" value="America" />
+		<form:option label="Switzerland" value="Switzerland" />
+		<form:option label="Germany" value="Germany" />
+		<form:option label="France" value="France" />
+
+	</form:select>
+	
+	<br></br>
+	<input type="submit" value="Process Form" />
+
+
+</form:form>
+
+
+<body>
+
+</body>
+</html>

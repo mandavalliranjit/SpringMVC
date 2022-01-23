@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-formvalidation&apos; to &apos;spring-formvalidation-demo&apos;" description="Rename resource &apos;spring-formvalidation&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/spring-formvalidation" name="spring-formvalidation-demo" stamp="1642950857102" updateReferences="true"/>
+</session>

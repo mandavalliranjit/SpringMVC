@@ -1,0 +1,40 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+
+<form:form action="processForm" modelAttribute="studentFromPage">
+	<br></br>
+First Name: <form:input path="firstName" />
+	<br></br>
+Last Name: <form:input path="lastName" />
+	<br></br>
+Country:
+	<form:select path="country">
+		<form:options items="${studentFromPage.countryOptions}" />
+	</form:select>
+
+	<br></br>
+
+	<form:select path="city">
+		<form:options items="${cityOptionsInController}" />
+	</form:select>
+	
+	<br></br>
+	<form:radiobutton path="favoriteLanguage" />
+
+	<br></br>
+
+
+	<input type="submit" value="Process Form" />
+
+
+</form:form>
+
+
+<body>
+
+</body>
+</html>

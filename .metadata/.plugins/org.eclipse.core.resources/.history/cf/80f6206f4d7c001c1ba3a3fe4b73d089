@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Confirmation Page</title>
+</head>
+<body>
+	Student's first name is: ${studentFromPage.firstName}
+	<br> <br/>Student's last name is : ${studentFromPage.lastName}
+	<br> <br/>The student is confirmed
+	<br> <br/>Student's Country is ${studentFromPage.country}
+</body>
+</html>

@@ -1,0 +1,29 @@
+package com.spring.customvalidation;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class CustomerController {
+	
+	@RequestMapping("/")
+	public String mainPage() {
+		return "home-page";
+	}
+	
+	@RequestMapping("/customerDetails")
+	public String customerDetailsPage(Model model) {
+		Customer customer = new Customer();
+		model.addAttribute("customerFromPage", customer);
+		return "customer-details";
+	}
+	
+	@RequestMapping("/processForm")
+	public String customerConfirmationpage() {
+		return "customer-confirmation";
+	}
+
+}

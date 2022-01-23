@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Confirmation Page</title>
+</head>
+<body>
+	Student's first name is: ${student.firstName}
+	<br> Student's last name is : ${student.lastName}
+	<br> The student is confirmed
+</body>
+</html>

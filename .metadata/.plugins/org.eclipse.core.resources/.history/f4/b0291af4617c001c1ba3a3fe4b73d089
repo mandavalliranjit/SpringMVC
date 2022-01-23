@@ -1,0 +1,11 @@
+package com.spring.formvalidation;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class CustomerController {
+
+	public String homePage() {
+		return "home-page";
+	}
+}

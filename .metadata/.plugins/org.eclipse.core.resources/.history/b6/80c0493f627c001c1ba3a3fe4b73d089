@@ -1,0 +1,7 @@
+package com.spring.formvalidation;
+
+public class Customer {
+	String firstName;
+	String lastName;
+
+}
